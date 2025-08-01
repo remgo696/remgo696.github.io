@@ -6,7 +6,7 @@ import sitemap from '@astrojs/sitemap';
 // https://astro.build/config
 export default defineConfig({
   site: 'https://remgo696.github.io',
-  base: '/maxwell-soluciones',
+  base: '/',
   integrations: [
     tailwind({
       applyBaseStyles: false,
@@ -14,7 +14,7 @@ export default defineConfig({
     react(),
     sitemap({
       customPages: [
-        'https://remgo696.github.io/maxwell-soluciones/',
+        'https://remgo696.github.io/',
       ],
       changefreq: 'weekly',
       priority: 1.0,
