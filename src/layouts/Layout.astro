@@ -1,0 +1,129 @@
+---
+export interface Props {
+  title: string;
+  description?: string;
+  keywords?: string;
+}
+
+const { title, description = "Maxwell: Soluciones Tecnológicas - Servicios eléctricos, cableado estructurado, cámaras de vigilancia y automatización en Lima Metropolitana", keywords = "servicios eléctricos Lima, cableado estructurado Lima, cámaras vigilancia Lima, automatización motores Lima" } = Astro.props;
+---
+
+<!doctype html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="description" content={description} />
+		<meta name="keywords" content={keywords} />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="author" content="Maxwell: Soluciones Tecnológicas" />
+		<meta name="robots" content="index, follow" />
+		
+		<!-- Open Graph / Facebook -->
+		<meta property="og:type" content="website" />
+		<meta property="og:url" content="https://remgo696.github.io/maxwell-soluciones/" />
+		<meta property="og:title" content={title} />
+		<meta property="og:description" content={description} />
+		<meta property="og:image" content="/maxwell-soluciones/banner.png" />
+		<meta property="og:locale" content="es_PE" />
+
+		<!-- Twitter -->
+		<meta property="twitter:card" content="summary_large_image" />
+		<meta property="twitter:url" content="https://remgo696.github.io/maxwell-soluciones/" />
+		<meta property="twitter:title" content={title} />
+		<meta property="twitter:description" content={description} />
+		<meta property="twitter:image" content="/maxwell-soluciones/banner.png" />
+
+		<!-- Local Business Schema -->
+		<script type="application/ld+json">
+		{
+			"@context": "https://schema.org",
+			"@type": "LocalBusiness",
+			"name": "Maxwell: Soluciones Tecnológicas",
+			"description": "Empresa especializada en servicios eléctricos, cableado estructurado, instalación de cámaras de vigilancia y automatización de motores en Lima Metropolitana",
+			"url": "https://remgo696.github.io/maxwell-soluciones/",
+			"telephone": "+51-XXX-XXX-XXX",
+			"address": {
+				"@type": "PostalAddress",
+				"addressLocality": "Lima",
+				"addressRegion": "Lima",
+				"addressCountry": "PE"
+			},
+			"geo": {
+				"@type": "GeoCoordinates",
+				"latitude": -12.046374,
+				"longitude": -77.042793
+			},
+			"areaServed": {
+				"@type": "City",
+				"name": "Lima Metropolitana"
+			},
+			"serviceArea": {
+				"@type": "GeoCircle",
+				"geoMidpoint": {
+					"@type": "GeoCoordinates",
+					"latitude": -12.046374,
+					"longitude": -77.042793
+				},
+				"geoRadius": "50000"
+			},
+			"hasOfferCatalog": {
+				"@type": "OfferCatalog",
+				"name": "Servicios Tecnológicos",
+				"itemListElement": [
+					{
+						"@type": "Offer",
+						"itemOffered": {
+							"@type": "Service",
+							"name": "Cableado Eléctrico Profesional",
+							"description": "Instalación y mantenimiento de sistemas eléctricos profesionales"
+						}
+					},
+					{
+						"@type": "Offer",
+						"itemOffered": {
+							"@type": "Service",
+							"name": "Instalación de Cámaras de Vigilancia",
+							"description": "Sistemas de videovigilancia y seguridad para empresas y hogares"
+						}
+					},
+					{
+						"@type": "Offer",
+						"itemOffered": {
+							"@type": "Service",
+							"name": "Cableado Estructurado",
+							"description": "Infraestructura de redes y telecomunicaciones"
+						}
+					},
+					{
+						"@type": "Offer",
+						"itemOffered": {
+							"@type": "Service",
+							"name": "Automatización y Dimensionamiento de Motores",
+							"description": "Sistemas de control y automatización industrial"
+						}
+					}
+				]
+			},
+			"sameAs": [
+				"https://www.facebook.com/people/Maxwell-Soluciones-Tecnol%C3%B3gicas/61578907081704/",
+				"https://www.instagram.com/maxwell.techsolutions/"
+			]
+		}
+		</script>
+
+		<link rel="icon" type="image/svg+xml" href="/maxwell-soluciones/logo.png" />
+		<meta name="generator" content={Astro.generator} />
+		<title>{title}</title>
+	</head>
+	<body>
+		<slot />
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/js/all.min.js"></script>
+	</body>
+</html>
+
+<style>
+	html {
+		font-family: 'Inter', system-ui, sans-serif;
+		scroll-behavior: smooth;
+	}
+</style>

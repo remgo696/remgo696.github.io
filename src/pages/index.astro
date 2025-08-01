@@ -1,0 +1,105 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Hero from '../components/Hero.tsx';
+import About from '../components/About.tsx';
+import Services from '../components/Services.tsx';
+import Contact from '../components/Contact.tsx';
+import Footer from '../components/Footer.astro';
+import '../styles/global.css';
+---
+
+<Layout 
+  title="Maxwell: Soluciones Tecnológicas - Servicios Eléctricos en Lima Metropolitana"
+  description="Empresa especializada en cableado eléctrico, instalación de cámaras de vigilancia, cableado estructurado y automatización de motores en Lima Metropolitana. +10 años de experiencia."
+  keywords="servicios eléctricos Lima, cableado estructurado Lima, cámaras vigilancia Lima, automatización motores Lima, instalaciones eléctricas Lima Metropolitana, Maxwell soluciones tecnológicas"
+>
+  <main>
+    <Header />
+    <Hero client:load />
+    <About client:load />
+    <Services client:load />
+    <Contact client:load />
+    <Footer />
+  </main>
+</Layout>
+
+<script>
+  // Smooth scroll for anchor links
+  document.addEventListener('DOMContentLoaded', function() {
+    const links = document.querySelectorAll('a[href^="#"]');
+    
+    links.forEach(link => {
+      link.addEventListener('click', function(e) {
+        e.preventDefault();
+        
+        const targetId = this.getAttribute('href');
+        const targetSection = document.querySelector(targetId);
+        
+        if (targetSection) {
+          const headerHeight = 80; // Height of fixed header
+          const targetPosition = targetSection.offsetTop - headerHeight;
+          
+          window.scrollTo({
+            top: targetPosition,
+            behavior: 'smooth'
+          });
+        }
+      });
+    });
+    
+    // Add scroll animations for elements
+    const observerOptions = {
+      threshold: 0.1,
+      rootMargin: '0px 0px -50px 0px'
+    };
+    
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('animate-fade-in');
+        }
+      });
+    }, observerOptions);
+    
+    // Observe sections for animations
+    const sections = document.querySelectorAll('section');
+    sections.forEach(section => observer.observe(section));
+  });
+</script>
+
+<style>
+  /* Global animations */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .animate-fade-in {
+    animation: fadeIn 0.8s ease-out forwards;
+  }
+  
+  /* Scroll behavior */
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  /* Loading state for images */
+  img {
+    transition: opacity 0.3s ease;
+  }
+  
+  img[loading] {
+    opacity: 0;
+  }
+  
+  img:not([loading]) {
+    opacity: 1;
+  }
+</style>

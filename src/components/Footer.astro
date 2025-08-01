@@ -1,0 +1,205 @@
+---
+// Footer.astro
+---
+
+<footer class="bg-primary text-white py-12 relative overflow-hidden">
+  <!-- Background Pattern -->
+  <div class="absolute inset-0 opacity-5">
+    <div class="absolute inset-0 bg-gradient-to-br from-accent/20 to-transparent"></div>
+  </div>
+
+  <div class="container-custom relative z-10">
+    <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
+      
+      <!-- Company Info -->
+      <div class="lg:col-span-2">
+        <div class="flex items-center space-x-3 mb-6">
+          <img src="/maxwell-soluciones/logo.png" alt="Maxwell Soluciones Tecnológicas" class="h-12 w-12 object-contain" />
+          <div>
+            <h3 class="font-heading font-bold text-xl">Maxwell</h3>
+            <p class="text-accent font-medium">Soluciones Tecnológicas</p>
+          </div>
+        </div>
+        
+        <p class="text-gray-300 mb-6 leading-relaxed max-w-md">
+          Líderes en servicios tecnológicos en Lima Metropolitana. Más de 10 años brindando soluciones eléctricas, de seguridad y automatización de calidad.
+        </p>
+
+        <div class="space-y-3">
+          <div class="flex items-center space-x-3">
+            <i class="fas fa-map-marker-alt text-accent w-4"></i>
+            <span class="text-gray-300">Lima Metropolitana, Perú</span>
+          </div>
+          <div class="flex items-center space-x-3">
+            <i class="fas fa-phone text-accent w-4"></i>
+            <span class="text-gray-300">+51 XXX XXX XXX</span>
+          </div>
+          <div class="flex items-center space-x-3">
+            <i class="fas fa-envelope text-accent w-4"></i>
+            <span class="text-gray-300">info@maxwell-soluciones.com</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Services -->
+      <div>
+        <h4 class="font-heading font-bold text-lg mb-6">Servicios</h4>
+        <ul class="space-y-3">
+          <li>
+            <a href="#servicios" class="text-gray-300 hover:text-accent transition-colors duration-300 flex items-center space-x-2">
+              <i class="fas fa-bolt text-xs text-accent"></i>
+              <span>Cableado Eléctrico</span>
+            </a>
+          </li>
+          <li>
+            <a href="#servicios" class="text-gray-300 hover:text-accent transition-colors duration-300 flex items-center space-x-2">
+              <i class="fas fa-video text-xs text-accent"></i>
+              <span>Cámaras de Vigilancia</span>
+            </a>
+          </li>
+          <li>
+            <a href="#servicios" class="text-gray-300 hover:text-accent transition-colors duration-300 flex items-center space-x-2">
+              <i class="fas fa-network-wired text-xs text-accent"></i>
+              <span>Cableado Estructurado</span>
+            </a>
+          </li>
+          <li>
+            <a href="#servicios" class="text-gray-300 hover:text-accent transition-colors duration-300 flex items-center space-x-2">
+              <i class="fas fa-cogs text-xs text-accent"></i>
+              <span>Automatización</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Quick Links -->
+      <div>
+        <h4 class="font-heading font-bold text-lg mb-6">Enlaces</h4>
+        <ul class="space-y-3">
+          <li>
+            <a href="#inicio" class="text-gray-300 hover:text-accent transition-colors duration-300">Inicio</a>
+          </li>
+          <li>
+            <a href="#nosotros" class="text-gray-300 hover:text-accent transition-colors duration-300">Sobre Nosotros</a>
+          </li>
+          <li>
+            <a href="#servicios" class="text-gray-300 hover:text-accent transition-colors duration-300">Servicios</a>
+          </li>
+          <li>
+            <a href="#contacto" class="text-gray-300 hover:text-accent transition-colors duration-300">Contacto</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Social Media & Copyright -->
+    <div class="border-t border-gray-700 pt-8">
+      <div class="flex flex-col md:flex-row justify-between items-center">
+        
+        <!-- Social Media -->
+        <div class="flex items-center space-x-6 mb-4 md:mb-0">
+          <span class="text-gray-300 font-medium">Síguenos:</span>
+          <a 
+            href="https://www.facebook.com/people/Maxwell-Soluciones-Tecnol%C3%B3gicas/61578907081704/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="text-gray-300 hover:text-accent transform hover:scale-110 transition-all duration-300"
+            aria-label="Síguenos en Facebook"
+          >
+            <i class="fab fa-facebook-f text-xl"></i>
+          </a>
+          <a 
+            href="https://www.instagram.com/maxwell.techsolutions/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="text-gray-300 hover:text-accent transform hover:scale-110 transition-all duration-300"
+            aria-label="Síguenos en Instagram"
+          >
+            <i class="fab fa-instagram text-xl"></i>
+          </a>
+          <a 
+            href="https://wa.me/51XXXXXXXXX"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="text-gray-300 hover:text-accent transform hover:scale-110 transition-all duration-300"
+            aria-label="Contáctanos por WhatsApp"
+          >
+            <i class="fab fa-whatsapp text-xl"></i>
+          </a>
+        </div>
+
+        <!-- Copyright -->
+        <div class="text-center md:text-right">
+          <p class="text-gray-400 text-sm">
+            © 2024 Maxwell: Soluciones Tecnológicas. Todos los derechos reservados.
+          </p>
+          <p class="text-gray-500 text-xs mt-1">
+            Servicios especializados en Lima Metropolitana
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- WhatsApp Floating Button -->
+<a 
+  href="https://wa.me/51XXXXXXXXX?text=Hola,%20me%20interesa%20información%20sobre%20sus%20servicios%20tecnológicos"
+  target="_blank"
+  rel="noopener noreferrer"
+  class="whatsapp-float"
+  aria-label="Contactar por WhatsApp"
+>
+  <i class="fab fa-whatsapp"></i>
+</a>
+
+<style>
+  .whatsapp-float {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 40px;
+    right: 40px;
+    background: linear-gradient(135deg, #25d366, #20c75a);
+    color: #FFF;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 0 4px 20px rgba(37, 211, 102, 0.4);
+    z-index: 100;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: pulse 2s infinite;
+  }
+
+  .whatsapp-float:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 25px rgba(37, 211, 102, 0.6);
+    background: linear-gradient(135deg, #20c75a, #25d366);
+  }
+
+  @keyframes pulse {
+    0% {
+      box-shadow: 0 4px 20px rgba(37, 211, 102, 0.4);
+    }
+    50% {
+      box-shadow: 0 4px 25px rgba(37, 211, 102, 0.6);
+    }
+    100% {
+      box-shadow: 0 4px 20px rgba(37, 211, 102, 0.4);
+    }
+  }
+
+  /* Mobile responsive */
+  @media (max-width: 768px) {
+    .whatsapp-float {
+      bottom: 20px;
+      right: 20px;
+      width: 50px;
+      height: 50px;
+      font-size: 24px;
+    }
+  }
+</style>
