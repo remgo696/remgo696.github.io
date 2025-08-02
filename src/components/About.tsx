@@ -82,7 +82,7 @@ const About = () => {
               className="text-lg text-gray-700 mb-6 leading-relaxed"
               variants={fadeInUp}
             >
-              <strong>Maxwell: Soluciones Tecnológicas</strong> es una empresa especializada en brindar servicios integrales de tecnología para empresas y hogares en Lima Metropolitana. Con más de 10 años de experiencia, nos hemos consolidado como líderes en el sector.
+              <strong>Maxwell: Soluciones Tecnológicas</strong> es una empresa especializada en brindar servicios integrales de tecnología para empresas y hogares en Lima Metropolitana. Con más de 2 años de experiencia, nos hemos consolidado como líderes en el sector.
             </motion.p>
             
             <motion.p 
@@ -98,11 +98,11 @@ const About = () => {
               variants={fadeInUp}
             >
               <div className="text-center">
-                <div className="text-3xl font-bold text-accent mb-2">500+</div>
+                <div className="text-3xl font-bold text-accent mb-2">50+</div>
                 <div className="text-gray-600 font-medium">Proyectos Completados</div>
               </div>
               <div className="text-center">
-                <div className="text-3xl font-bold text-accent mb-2">10+</div>
+                <div className="text-3xl font-bold text-accent mb-2">2+</div>
                 <div className="text-gray-600 font-medium">Años de Experiencia</div>
               </div>
             </motion.div>
