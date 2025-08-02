@@ -32,6 +32,14 @@ npm install
 #### En `src/layouts/Layout.astro`:
 - Línea 31: Actualizar número en el Schema
 
+### 🔧 Solución de errores comunes
+
+#### Error de configuración experimental:
+Si obtienes el error: `experimental Invalid or outdated experimental feature`
+- Este error ha sido corregido en el `astro.config.mjs`
+- Las opciones experimentales obsoletas han sido eliminadas
+- La configuración ahora es compatible con Astro v4+
+
 ### 5. Comandos de desarrollo
 
 ```bash
