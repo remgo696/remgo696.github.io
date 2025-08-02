@@ -1,11 +1,11 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://remgo696.github.io/sitemap.xml
+Sitemap: https://remgo696.github.io/maxwell-soluciones/sitemap.xml
 
 # Specific pages
-Allow: /
-Allow: /index.html
+Allow: /maxwell-soluciones/
+Allow: /maxwell-soluciones/index.html
 
 # SEO optimization for local business
 # Maxwell: Soluciones Tecnológicas

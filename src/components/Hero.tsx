@@ -39,7 +39,7 @@ const Hero = () => {
       {/* Background Image with Overlay */}
       <div className="absolute inset-0 z-0">
         <img 
-          src="/banner.png" 
+          src="/maxwell-soluciones/banner.png" 
           alt="Maxwell Soluciones Tecnológicas - Servicios profesionales en Lima" 
           className="w-full h-full object-cover"
         />

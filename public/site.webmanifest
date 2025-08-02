@@ -2,19 +2,19 @@
   "name": "Maxwell: Soluciones Tecnológicas",
   "short_name": "Maxwell Tech",
   "description": "Servicios tecnológicos especializados en Lima Metropolitana",
-  "start_url": "/",
+  "start_url": "/maxwell-soluciones/",
   "display": "standalone",
   "background_color": "#0D1B2A",
   "theme_color": "#0D1B2A",
   "orientation": "portrait-primary",
   "icons": [
     {
-      "src": "/logo.png",
+      "src": "/maxwell-soluciones/logo.png",
       "sizes": "1024x1024",
       "type": "image/png"
     }
   ],
   "categories": ["business", "productivity", "utilities"],
   "lang": "es-PE",
-  "scope": "/"
+  "scope": "/maxwell-soluciones/"
 }
