@@ -2,7 +2,7 @@
 <browserconfig>
     <msapplication>
         <tile>
-            <square150x150logo src="/maxwell-soluciones/logo.png"/>
+            <square150x150logo src="/logo.png"/>
             <TileColor>#0D1B2A</TileColor>
         </tile>
     </msapplication>

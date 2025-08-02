@@ -4,8 +4,8 @@ Allow: /
 Sitemap: https://remgo696.github.io/maxwell-soluciones/sitemap.xml
 
 # Specific pages
-Allow: /maxwell-soluciones/
-Allow: /maxwell-soluciones/index.html
+Allow: /
+Allow: /index.html
 
 # SEO optimization for local business
 # Maxwell: Soluciones Tecnológicas
