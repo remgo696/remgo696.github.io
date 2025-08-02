@@ -48,36 +48,71 @@ const Hero = () => {
 
       {/* Content */}
       <motion.div 
-        className="relative z-10 container-custom text-center text-white"
+        className="container-custom text-center text-white relative z-10 flex flex-col justify-center min-h-screen py-20"
         variants={containerVariants}
         initial="hidden"
         animate="visible"
       >
-        <motion.h1 
-          className="font-heading text-4xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight"
-          variants={itemVariants}
-        >
-          Maxwell
-          <br />
-          <span className="text-accent">Soluciones Tecnológicas</span>
-        </motion.h1>
+        {/* Main Title */}
+        <motion.div className="mb-8" variants={itemVariants}>
+          <motion.h1 
+            className="font-heading text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight"
+            variants={itemVariants}
+          >
+            <span className="block">Soluciones</span>
+            <motion.span 
+              className="block text-accent"
+              initial={{ scale: 0.8 }}
+              animate={{ scale: 1 }}
+              transition={{ delay: 0.5, duration: 0.8, type: "spring" }}
+            >
+              Maxwell
+            </motion.span>
+            <span className="block">Tecnológicas</span>
+          </motion.h1>
+          
+          <motion.p 
+            className="text-xl md:text-2xl text-gray-200 max-w-4xl mx-auto leading-relaxed"
+            variants={itemVariants}
+          >
+            Especialistas en <span className="text-accent font-semibold">servicios eléctricos</span>, 
+            <span className="text-accent font-semibold"> cableado estructurado</span>, 
+            <span className="text-accent font-semibold"> cámaras de vigilancia</span> y 
+            <span className="text-accent font-semibold"> automatización de motores</span> en Lima Metropolitana
+          </motion.p>
+        </motion.div>
 
-        <motion.p 
-          className="text-xl md:text-2xl font-light mb-8 max-w-3xl mx-auto leading-relaxed"
-          variants={itemVariants}
-        >
-          Expertos en <strong>cableado eléctrico</strong>, <strong>cámaras de vigilancia</strong>, <strong>cableado estructurado</strong> y <strong>automatización de motores</strong> en Lima Metropolitana
-        </motion.p>
-
-        <motion.p 
-          className="text-lg md:text-xl text-gray-200 mb-12 max-w-2xl mx-auto"
-          variants={itemVariants}
-        >
-          Más de 10 años brindando soluciones tecnológicas confiables y de calidad para empresas y hogares
-        </motion.p>
-
+        {/* Key Points */}
         <motion.div 
-          className="flex flex-col sm:flex-row gap-4 justify-center items-center"
+          className="grid md:grid-cols-3 gap-4 mb-12 max-w-4xl mx-auto"
+          variants={itemVariants}
+        >
+          <motion.div 
+            className="flex items-center justify-center space-x-2 bg-white/10 backdrop-blur-sm rounded-full px-4 py-2"
+            whileHover={{ scale: 1.05, backgroundColor: "rgba(255,255,255,0.15)" }}
+          >
+            <i className="fas fa-shield-alt text-accent"></i>
+            <span className="font-medium">Garantía Total</span>
+          </motion.div>
+          <motion.div 
+            className="flex items-center justify-center space-x-2 bg-white/10 backdrop-blur-sm rounded-full px-4 py-2"
+            whileHover={{ scale: 1.05, backgroundColor: "rgba(255,255,255,0.15)" }}
+          >
+            <i className="fas fa-clock text-accent"></i>
+            <span className="font-medium">Respuesta 24/7</span>
+          </motion.div>
+          <motion.div 
+            className="flex items-center justify-center space-x-2 bg-white/10 backdrop-blur-sm rounded-full px-4 py-2"
+            whileHover={{ scale: 1.05, backgroundColor: "rgba(255,255,255,0.15)" }}
+          >
+            <i className="fas fa-tools text-accent"></i>
+            <span className="font-medium">Equipo Experto</span>
+          </motion.div>
+        </motion.div>
+
+        {/* CTA Buttons */}
+        <motion.div 
+          className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-16"
           variants={itemVariants}
         >
           <motion.a
@@ -101,9 +136,9 @@ const Hero = () => {
           </motion.a>
         </motion.div>
 
-        {/* Scroll Indicator */}
+        {/* Scroll Indicator - Ahora posicionado relativamente al final del contenido */}
         <motion.div 
-          className="absolute bottom-8 left-1/2 transform -translate-x-1/2"
+          className="flex flex-col items-center justify-center mt-auto"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 1.5, duration: 0.6 }}

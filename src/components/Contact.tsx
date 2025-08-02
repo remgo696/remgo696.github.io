@@ -2,6 +2,11 @@ import { motion } from 'framer-motion';
 import { useEffect, useState } from 'react';
 
 const Contact = () => {
+  // Hardcoded contact information
+  const phoneNumber = "+51957080898";
+  const whatsappNumber = "51957080898";
+  const email = "maxwell.technology.solutions@gmail.com";
+  
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
@@ -46,25 +51,25 @@ const Contact = () => {
     {
       icon: "fas fa-phone",
       title: "Llámanos",
-      info: "+51 XXX XXX XXX",
+      info: phoneNumber,
       description: "Lunes a Viernes: 8:00 AM - 6:00 PM",
-      action: "tel:+51XXXXXXXXX",
+      action: `tel:${phoneNumber}`,
       color: "from-green-400 to-green-600"
     },
     {
       icon: "fab fa-whatsapp",
       title: "WhatsApp",
-      info: "+51 XXX XXX XXX",
+      info: phoneNumber,
       description: "Respuesta inmediata",
-      action: "https://wa.me/51XXXXXXXXX?text=Hola,%20me%20interesa%20información%20sobre%20sus%20servicios%20tecnológicos",
+      action: `https://wa.me/${whatsappNumber}?text=Hola%2C%20me%20interesa%20informaci%C3%B3n%20sobre%20sus%20servicios%20tecnol%C3%B3gicos`,
       color: "from-green-500 to-green-700"
     },
     {
       icon: "fas fa-envelope",
       title: "Email",
-      info: "info@maxwell-soluciones.com",
+      info: email,
       description: "Respuesta en 24 horas",
-      action: "mailto:info@maxwell-soluciones.com",
+      action: `mailto:${email}`,
       color: "from-blue-400 to-blue-600"
     },
     {
@@ -191,7 +196,7 @@ const Contact = () => {
               variants={cardVariants}
             >
               <motion.a
-                href="https://wa.me/51XXXXXXXXX?text=Hola,%20me%20interesa%20información%20sobre%20sus%20servicios%20tecnológicos"
+                href={`https://wa.me/${whatsappNumber}?text=Hola%2C%20me%20interesa%20informaci%C3%B3n%20sobre%20sus%20servicios%20tecnol%C3%B3gicos`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-block bg-gradient-to-r from-accent to-blue-500 text-white font-bold text-lg px-8 py-4 rounded-2xl hover:from-blue-500 hover:to-accent transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl mb-4"
@@ -205,7 +210,7 @@ const Contact = () => {
               <p className="text-sm text-gray-300">
                 O llámanos directamente al: 
                 <br />
-                <strong className="text-accent">+51 XXX XXX XXX</strong>
+                <strong className="text-accent">{phoneNumber}</strong>
               </p>
             </motion.div>
           </div>

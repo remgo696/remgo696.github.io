@@ -6,6 +6,14 @@ export interface Props {
 }
 
 const { title, description = "Maxwell: Soluciones Tecnológicas - Servicios eléctricos, cableado estructurado, cámaras de vigilancia y automatización en Lima Metropolitana", keywords = "servicios eléctricos Lima, cableado estructurado Lima, cámaras vigilancia Lima, automatización motores Lima" } = Astro.props;
+
+// Hardcoded contact information
+const SITE_URL = "https://remgo696.github.io/maxwell-soluciones/";
+const SITE_NAME = "Maxwell: Soluciones Tecnológicas";
+const PHONE_NUMBER = "+51957080898";
+const EMAIL = "maxwell.technology.solutions@gmail.com";
+const FACEBOOK_URL = "https://www.facebook.com/people/Maxwell-Soluciones-Tecnol%C3%B3gicas/61578907081704/";
+const INSTAGRAM_URL = "https://www.instagram.com/maxwell.techsolutions/";
 ---
 
 <!doctype html>
@@ -20,7 +28,7 @@ const { title, description = "Maxwell: Soluciones Tecnológicas - Servicios elé
 		
 		<!-- Open Graph / Facebook -->
 		<meta property="og:type" content="website" />
-		<meta property="og:url" content="https://remgo696.github.io/maxwell-soluciones/" />
+		<meta property="og:url" content={SITE_URL} />
 		<meta property="og:title" content={title} />
 		<meta property="og:description" content={description} />
 		<meta property="og:image" content="/maxwell-soluciones/banner.png" />
@@ -28,20 +36,19 @@ const { title, description = "Maxwell: Soluciones Tecnológicas - Servicios elé
 
 		<!-- Twitter -->
 		<meta property="twitter:card" content="summary_large_image" />
-		<meta property="twitter:url" content="https://remgo696.github.io/maxwell-soluciones/" />
+		<meta property="twitter:url" content={SITE_URL} />
 		<meta property="twitter:title" content={title} />
 		<meta property="twitter:description" content={description} />
 		<meta property="twitter:image" content="/maxwell-soluciones/banner.png" />
 
 		<!-- Local Business Schema -->
-		<script type="application/ld+json">
-		{
+		<script type="application/ld+json" set:html={JSON.stringify({
 			"@context": "https://schema.org",
 			"@type": "LocalBusiness",
-			"name": "Maxwell: Soluciones Tecnológicas",
+			"name": SITE_NAME,
 			"description": "Empresa especializada en servicios eléctricos, cableado estructurado, instalación de cámaras de vigilancia y automatización de motores en Lima Metropolitana",
-			"url": "https://remgo696.github.io/maxwell-soluciones/",
-			"telephone": "+51-XXX-XXX-XXX",
+			"url": SITE_URL,
+			"telephone": PHONE_NUMBER,
 			"address": {
 				"@type": "PostalAddress",
 				"addressLocality": "Lima",
@@ -105,11 +112,10 @@ const { title, description = "Maxwell: Soluciones Tecnológicas - Servicios elé
 				]
 			},
 			"sameAs": [
-				"https://www.facebook.com/people/Maxwell-Soluciones-Tecnol%C3%B3gicas/61578907081704/",
-				"https://www.instagram.com/maxwell.techsolutions/"
+				FACEBOOK_URL,
+				INSTAGRAM_URL
 			]
-		}
-		</script>
+		})}></script>
 
 		<link rel="icon" type="image/svg+xml" href="/maxwell-soluciones/logo.png" />
 		<meta name="generator" content={Astro.generator} />

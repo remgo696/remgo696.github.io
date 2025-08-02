@@ -1,5 +1,13 @@
 ---
 // Footer.astro
+
+// Hardcoded contact information
+const SITE_NAME = "Maxwell: Soluciones Tecnológicas";
+const PHONE_NUMBER = "+51957080898";
+const WHATSAPP_NUMBER = "51957080898";
+const EMAIL = "maxwell.technology.solutions@gmail.com";
+const FACEBOOK_URL = "https://www.facebook.com/people/Maxwell-Soluciones-Tecnol%C3%B3gicas/61578907081704/";
+const INSTAGRAM_URL = "https://www.instagram.com/maxwell.techsolutions/";
 ---
 
 <footer class="bg-primary text-white py-12 relative overflow-hidden">
@@ -32,11 +40,11 @@
           </div>
           <div class="flex items-center space-x-3">
             <i class="fas fa-phone text-accent w-4"></i>
-            <span class="text-gray-300">+51 XXX XXX XXX</span>
+            <span class="text-gray-300">{PHONE_NUMBER}</span>
           </div>
           <div class="flex items-center space-x-3">
             <i class="fas fa-envelope text-accent w-4"></i>
-            <span class="text-gray-300">info@maxwell-soluciones.com</span>
+            <span class="text-gray-300">{EMAIL}</span>
           </div>
         </div>
       </div>
@@ -100,7 +108,7 @@
         <div class="flex items-center space-x-6 mb-4 md:mb-0">
           <span class="text-gray-300 font-medium">Síguenos:</span>
           <a 
-            href="https://www.facebook.com/people/Maxwell-Soluciones-Tecnol%C3%B3gicas/61578907081704/"
+            href={FACEBOOK_URL}
             target="_blank"
             rel="noopener noreferrer"
             class="text-gray-300 hover:text-accent transform hover:scale-110 transition-all duration-300"
@@ -109,7 +117,7 @@
             <i class="fab fa-facebook-f text-xl"></i>
           </a>
           <a 
-            href="https://www.instagram.com/maxwell.techsolutions/"
+            href={INSTAGRAM_URL}
             target="_blank"
             rel="noopener noreferrer"
             class="text-gray-300 hover:text-accent transform hover:scale-110 transition-all duration-300"
@@ -118,7 +126,7 @@
             <i class="fab fa-instagram text-xl"></i>
           </a>
           <a 
-            href="https://wa.me/51XXXXXXXXX"
+            href={`https://wa.me/${WHATSAPP_NUMBER}?text=Hola%2C%20me%20interesa%20informaci%C3%B3n%20sobre%20sus%20servicios%20tecnol%C3%B3gicos`}
             target="_blank"
             rel="noopener noreferrer"
             class="text-gray-300 hover:text-accent transform hover:scale-110 transition-all duration-300"
@@ -144,7 +152,7 @@
 
 <!-- WhatsApp Floating Button -->
 <a 
-  href="https://wa.me/51XXXXXXXXX?text=Hola,%20me%20interesa%20información%20sobre%20sus%20servicios%20tecnológicos"
+  href={`https://wa.me/${WHATSAPP_NUMBER}?text=Hola%2C%20me%20interesa%20informaci%C3%B3n%20sobre%20sus%20servicios%20tecnol%C3%B3gicos`}
   target="_blank"
   rel="noopener noreferrer"
   class="whatsapp-float"
