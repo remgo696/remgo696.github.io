@@ -1,7 +1,7 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://remgo696.github.io/maxwell-soluciones/sitemap.xml
+Sitemap: https://remgo696.github.io/sitemap.xml
 
 # Specific pages
 Allow: /

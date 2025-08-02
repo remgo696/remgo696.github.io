@@ -6,7 +6,6 @@ import sitemap from '@astrojs/sitemap';
 // https://astro.build/config
 export default defineConfig({
   site: 'https://remgo696.github.io',
-  base: '/maxwell-soluciones',
   integrations: [
     tailwind({
       applyBaseStyles: false,
