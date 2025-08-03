@@ -82,14 +82,7 @@ const About = () => {
               className="text-lg text-gray-700 mb-6 leading-relaxed"
               variants={fadeInUp}
             >
-              <strong>Maxwell: Soluciones Tecnológicas</strong> es una empresa especializada en brindar servicios integrales de tecnología para empresas y hogares en Lima Metropolitana. Con más de 2 años de experiencia, nos hemos consolidado como líderes en el sector.
-            </motion.p>
-            
-            <motion.p 
-              className="text-lg text-gray-700 mb-8 leading-relaxed"
-              variants={fadeInUp}
-            >
-              Nuestro equipo de profesionales altamente capacitados garantiza la excelencia en cada proyecto, utilizando las mejores prácticas y tecnologías más avanzadas del mercado.
+              En <strong>Maxwell: Soluciones Tecnológicas</strong> ayudamos a pequeñas empresas a proteger sus activos y optimizar sus operaciones con soluciones confiables en electricidad, redes y vigilancia. Sabemos que cada robo, falla o ineficiencia genera pérdidas. Por eso brindamos sistemas profesionales con instalación segura, soporte especializado y tecnología de última generación que garantiza control y tranquilidad para tu negocio.
             </motion.p>
 
             {/* Stats */}
@@ -113,11 +106,11 @@ const About = () => {
             >
               <div className="flex items-center space-x-2 text-gray-700">
                 <i className="fas fa-check-circle text-accent"></i>
-                <span>Certificaciones Internacionales</span>
+                <span>Marcas Internacionales</span>
               </div>
               <div className="flex items-center space-x-2 text-gray-700">
                 <i className="fas fa-check-circle text-accent"></i>
-                <span>Garantía en Todos los Servicios</span>
+                <span>Garantía en las Instalaciones</span>
               </div>
               <div className="flex items-center space-x-2 text-gray-700">
                 <i className="fas fa-check-circle text-accent"></i>

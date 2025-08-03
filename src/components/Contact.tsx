@@ -6,7 +6,8 @@ const Contact = () => {
   const phoneNumber = "+51957080898";
   const whatsappNumber = "51957080898";
   const email = "maxwell.technology.solutions@gmail.com";
-  
+  const locationLink = "DoPHT8bDLd3Ybbiw6"
+
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
@@ -77,7 +78,7 @@ const Contact = () => {
       title: "Ubicación",
       info: "Lima Metropolitana",
       description: "Servicios en toda la ciudad",
-      action: "#",
+      action: `https://maps.app.goo.gl/${locationLink}`,
       color: "from-red-400 to-red-600"
     }
   ];
@@ -120,6 +121,8 @@ const Contact = () => {
             <motion.a
               key={index}
               href={method.action}
+              target={method.title !== "Llámanos" ? "_blank" : undefined}
+              rel={method.title !== "Llámanos" ? "noopener noreferrer" : undefined}
               className="group block bg-white/10 backdrop-blur-sm rounded-2xl p-6 hover:bg-white/20 transition-all duration-300 border border-white/20"
               variants={cardVariants}
               whileHover={{ 
@@ -138,7 +141,7 @@ const Contact = () => {
                 {method.title}
               </h3>
               
-              <p className="text-accent font-semibold mb-2">
+              <p className="text-accent font-semibold mb-2 break-words text-sm">
                 {method.info}
               </p>
               

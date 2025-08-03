@@ -35,7 +35,7 @@ const Hero = () => {
   };
 
   return (
-    <section id="inicio" className="relative min-h-screen flex items-center justify-center overflow-hidden">
+    <section id="inicio" className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20">
       {/* Background Image with Overlay */}
       <div className="absolute inset-0 z-0">
         <img 
@@ -75,10 +75,8 @@ const Hero = () => {
             className="text-xl md:text-2xl text-gray-200 max-w-4xl mx-auto leading-relaxed"
             variants={itemVariants}
           >
-            Especialistas en <span className="text-accent font-semibold">servicios eléctricos</span>, 
-            <span className="text-accent font-semibold"> cableado estructurado</span>, 
-            <span className="text-accent font-semibold"> cámaras de vigilancia</span> y 
-            <span className="text-accent font-semibold"> automatización de motores</span> en Lima Metropolitana
+            Haz crecer tu negocio con <span className="text-accent font-semibold">soluciones eléctricas</span> y de
+            <span className="text-accent font-semibold"> vigilancia</span> confiables
           </motion.p>
         </motion.div>
 
@@ -140,11 +138,11 @@ const Hero = () => {
         <motion.div 
           className="flex flex-col items-center justify-center mt-auto"
           initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
+          animate={{ opacity: 1, y: -10 }}
           transition={{ delay: 1.5, duration: 0.6 }}
         >
           <motion.div
-            animate={{ y: [0, 10, 0] }}
+            animate={{ y: [-10, 0, -10] }}
             transition={{ duration: 2, repeat: Infinity }}
             className="text-white/80 text-center"
           >

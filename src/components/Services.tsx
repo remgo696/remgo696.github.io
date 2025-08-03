@@ -25,49 +25,49 @@ const Services = () => {
   const services = [
     {
       icon: "fas fa-bolt",
-      title: "Cableado Eléctrico Profesional",
-      description: "Instalación y mantenimiento de sistemas eléctricos residenciales, comerciales e industriales con los más altos estándares de seguridad.",
+      title: "Instalaciones Eléctricas Seguras",
+      description: "Garantiza energía confiable para tu negocio con instalaciones eléctricas seguras y eficientes, evitando fallas y sobrecargas que puedan afectar tus operaciones.",
       features: [
-        "Instalaciones eléctricas residenciales",
-        "Sistemas eléctricos comerciales",
-        "Mantenimiento preventivo",
-        "Certificaciones técnicas"
+        "Cableado eléctrico residencial y comercial",
+        "Diseño e instalación de tableros de distribución",
+        "Mantenimiento preventivo y correctivo",
+        "Optimización de carga y protección eléctrica"
       ],
       color: "from-yellow-400 to-orange-500"
     },
     {
       icon: "fas fa-video",
-      title: "Instalación de Cámaras de Vigilancia",
-      description: "Sistemas de videovigilancia HD y 4K con monitoreo remoto, perfectos para hogares, oficinas y empresas en Lima Metropolitana.",
+      title: "CCTV Inteligente",
+      description: "Protege tu empresa con sistemas de videovigilancia profesionales, accesibles desde tu celular y diseñados para prevenir pérdidas y asegurar evidencia confiable.",
       features: [
-        "Cámaras HD y 4K",
-        "Monitoreo remoto 24/7",
-        "Sistemas de grabación",
-        "Aplicaciones móviles"
+        "Cámaras IP y analógicas (HD y 4K)",
+        "Grabadores DVR / NVR / HVR",
+        "Analítica avanzada con AI",
+        "Configuración de acceso remoto seguro"
       ],
       color: "from-red-400 to-pink-500"
     },
     {
       icon: "fas fa-network-wired",
-      title: "Cableado Estructurado",
-      description: "Infraestructura de redes completa para empresas, incluyendo fibra óptica, UTP y sistemas de telecomunicaciones avanzados.",
+      title: "Redes y Cableado Estructurado",
+      description: "Mejora la conectividad de tu empresa con redes estables y escalables para voz, datos y sistemas de seguridad.",
       features: [
-        "Redes de fibra óptica",
-        "Cableado UTP Cat 6/6A",
-        "Certificación de enlaces",
-        "Documentación técnica"
+        "Cableado UTP Cat 6/6A y fibra óptica",
+        "Instalación de racks y patch panels",
+        "Configuración de puntos de red",
+        "Infraestructura para CCTV y VoIP"
       ],
       color: "from-green-400 to-blue-500"
     },
     {
       icon: "fas fa-cogs",
-      title: "Automatización y Dimensionamiento de Motores",
-      description: "Sistemas de control automático y dimensionamiento de motores para optimizar la eficiencia energética en procesos industriales.",
+      title: "Automatización y Control de Motores",
+      description: "Optimiza procesos industriales con control automático de motores, reduciendo consumo energético y mejorando la confiabilidad de tu operación.",
       features: [
-        "Control automático de motores",
-        "Dimensionamiento eficiente",
-        "Sistemas SCADA",
-        "Ahorro energético"
+        "Programación con PLCs Siemens",
+        "Dimensionamiento de motores según carga",
+        "Integración con variadores de frecuencia",
+        "Arranques y protección de equipos eléctricos"
       ],
       color: "from-purple-400 to-indigo-500"
     }
