@@ -24,6 +24,18 @@ const Services = () => {
 
   const services = [
     {
+  icon: "fas fa-cube",
+  title: "Impresiones 3D Profesionales",
+  description: "Convierte ideas en soluciones reales con impresiones 3D precisas y funcionales, ideales para prototipos, repuestos y piezas personalizadas que optimizan tiempo y costos.",
+  features: [
+    "Fabricación de piezas técnicas y funcionales",
+    "Asistencia personalizada en tu diseño 3D",
+    "Repuestos personalizados y soportes a medida",
+    "Impresión en PLA, PETG, Nylon y otros materiales"
+  ],
+  color: "from-blue-500 to-slate-600"
+    },
+    {
       icon: "fas fa-bolt",
       title: "Instalaciones Eléctricas Seguras",
       description: "Garantiza energía confiable para tu negocio con instalaciones eléctricas seguras y eficientes, evitando fallas y sobrecargas que puedan afectar tus operaciones.",
