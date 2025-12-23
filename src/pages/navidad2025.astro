@@ -1,0 +1,372 @@
+---
+import Layout from '../layouts/Layout.astro';
+import '../styles/global.css';
+
+// Información de contacto
+const WHATSAPP_NUMBER = "+51957080898";
+const whatsappBase = `https://wa.me/${WHATSAPP_NUMBER.replace(/[^0-9]/g, '')}`;
+---
+
+<Layout 
+  title="Regalos Navideños 3D | Maxwell: Soluciones Tecnológicas"
+  description="Regalos únicos impresos en 3D para esta Navidad 2025. Porta mandos Pokémon Cubone y Retratos con litografía personalizados. Entrega en Lima Metropolitana."
+  keywords="regalos navidad 3D, impresión 3D Lima, porta mandos pokemon, litografía 3D, regalos personalizados Lima, navidad 2025"
+>
+  <main class="min-h-screen bg-gradient-to-br from-slate-50 via-white to-blue-50">
+    
+    <!-- Header minimalista -->
+    <header class="fixed top-0 left-0 right-0 z-50 bg-white/90 backdrop-blur-md border-b border-gray-100">
+      <div class="container-custom py-4">
+        <div class="flex items-center justify-between">
+          <a href="/" class="flex items-center gap-3 group">
+            <img src="/logo.png" alt="Maxwell Logo" class="h-10 w-auto" />
+            <span class="font-heading font-bold text-primary text-lg hidden sm:block">Maxwell</span>
+          </a>
+          <a 
+            href="/#servicios" 
+            class="text-sm text-gray-600 hover:text-accent transition-colors flex items-center gap-2"
+          >
+            <i class="fas fa-arrow-left"></i>
+            Volver a servicios
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="pt-32 pb-16 px-4">
+      <div class="container-custom text-center">
+        <div class="inline-flex items-center gap-2 bg-red-50 text-red-600 px-4 py-2 rounded-full text-sm font-medium mb-6">
+          <i class="fas fa-gift"></i>
+          Edición Especial Navidad 2025
+        </div>
+        <h1 class="font-heading text-4xl md:text-5xl lg:text-6xl font-bold text-primary mb-6">
+          Regalos <span class="text-accent">Únicos</span><br/>
+          <span class="text-3xl md:text-4xl lg:text-5xl text-gray-600">Impresos en 3D</span>
+        </h1>
+        <p class="text-lg md:text-xl text-gray-600 max-w-2xl mx-auto leading-relaxed mb-8">
+          Sorprende a quien más quieres con piezas exclusivas que no encontrarás en ninguna tienda. 
+          <span class="font-semibold text-primary">Hechas con precisión, entregadas con cariño.</span>
+        </p>
+        
+        <!-- Trust badges -->
+        <div class="flex flex-wrap justify-center gap-6 text-sm text-gray-500">
+          <div class="flex items-center gap-2">
+            <i class="fas fa-check-circle text-green-500"></i>
+            Entrega en Lima
+          </div>
+          <div class="flex items-center gap-2">
+            <i class="fas fa-check-circle text-green-500"></i>
+            Calidad garantizada
+          </div>
+          <div class="flex items-center gap-2">
+            <i class="fas fa-check-circle text-green-500"></i>
+            Piezas únicas
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Productos -->
+    <section class="py-16 px-4">
+      <div class="container-custom">
+        <div class="grid md:grid-cols-2 gap-8 lg:gap-12 max-w-5xl mx-auto">
+          
+          <!-- Producto 1: Porta Mandos Pokemon Cubone -->
+          <article class="group bg-white rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-500 overflow-hidden border border-gray-100">
+            <!-- Imagen principal -->
+            <div class="relative aspect-square bg-gradient-to-br from-slate-100 to-slate-200 overflow-hidden">
+              <img 
+                src="/productos/cubone-portamandos.jpg" 
+                alt="Porta mandos Pokémon Cubone - Vista principal"
+                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                loading="lazy"
+              />
+              <!-- Badge -->
+              <div class="absolute top-4 left-4 bg-yellow-400 text-yellow-900 px-3 py-1 rounded-full text-xs font-bold">
+                <i class="fas fa-star mr-1"></i> Popular
+              </div>
+            </div>
+
+            <!-- Galería mini -->
+            <div class="flex gap-2 p-4 bg-gray-50">
+              <button class="thumbnail-btn active" data-product="cubone" data-img="/productos/cubone-portamandos.jpg">
+                <img src="/productos/cubone-portamandos.jpg" alt="Vista principal" class="w-full h-full object-cover rounded-lg" />
+              </button>
+              <button class="thumbnail-btn" data-product="cubone" data-img="/productos/cubone-lateral.jpg">
+                <img src="/productos/cubone-lateral.jpg" alt="Vista lateral" class="w-full h-full object-cover rounded-lg" />
+              </button>
+              <button class="thumbnail-btn" data-product="cubone" data-img="/productos/cubone-detalle.jpg">
+                <img src="/productos/cubone-detalle.jpg" alt="Detalle del rostro" class="w-full h-full object-cover rounded-lg" />
+              </button>
+              <button class="thumbnail-btn" data-product="cubone" data-img="/productos/cubone-uso.jpg">
+                <img src="/productos/cubone-uso.jpg" alt="En uso con mando" class="w-full h-full object-cover rounded-lg" />
+              </button>
+            </div>
+
+            <!-- Info -->
+            <div class="p-6">
+              <div class="flex items-start justify-between mb-4">
+                <div>
+                  <h2 class="font-heading text-2xl font-bold text-primary mb-1">
+                    Porta Mandos Cubone
+                  </h2>
+                  <p class="text-gray-500 text-sm">Pokémon • Decorativo & Funcional</p>
+                </div>
+                <div class="text-right">
+                  <p class="text-sm text-gray-400 line-through">S/ 89</p>
+                  <p class="text-2xl font-bold text-accent">S/ 69</p>
+                </div>
+              </div>
+
+              <p class="text-gray-600 mb-6 leading-relaxed">
+                El compañero perfecto para tu escritorio gamer. Cubone sostiene tu mando de PS5, Xbox o Switch 
+                mientras no lo usas, protegiéndolo y dándole un toque único a tu setup.
+              </p>
+
+              <!-- Características -->
+              <ul class="space-y-2 mb-6 text-sm">
+                <li class="flex items-center gap-2 text-gray-700">
+                  <i class="fas fa-ruler text-accent w-4"></i>
+                  <span>Tamaño: 15 x 12 x 18 cm aprox.</span>
+                </li>
+                <li class="flex items-center gap-2 text-gray-700">
+                  <i class="fas fa-gamepad text-accent w-4"></i>
+                  <span>Compatible con PS4, PS5, Xbox, Switch Pro</span>
+                </li>
+                <li class="flex items-center gap-2 text-gray-700">
+                  <i class="fas fa-cube text-accent w-4"></i>
+                  <span>Material: PLA de alta calidad</span>
+                </li>
+                <li class="flex items-center gap-2 text-gray-700">
+                  <i class="fas fa-paint-brush text-accent w-4"></i>
+                  <span>Acabado mate profesional</span>
+                </li>
+              </ul>
+
+              <!-- CTA -->
+              <a 
+                href={`${whatsappBase}?text=${encodeURIComponent('¡Hola! Me interesa el Porta Mandos Cubone para Navidad 🎄')}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                class="w-full bg-green-500 hover:bg-green-600 text-white font-semibold py-4 px-6 rounded-xl flex items-center justify-center gap-3 transition-all duration-300 hover:scale-[1.02] active:scale-[0.98]"
+              >
+                <i class="fab fa-whatsapp text-xl"></i>
+                Consultar disponibilidad
+              </a>
+            </div>
+          </article>
+
+          <!-- Producto 2: Retrato con Litografía -->
+          <article class="group bg-white rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-500 overflow-hidden border border-gray-100">
+            <!-- Imagen principal -->
+            <div class="relative aspect-square bg-gradient-to-br from-slate-100 to-slate-200 overflow-hidden">
+              <img 
+                src="/productos/litofania-retrato.jpg" 
+                alt="Retrato con litografía 3D - Vista principal"
+                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                loading="lazy"
+              />
+              <!-- Badge -->
+              <div class="absolute top-4 left-4 bg-pink-100 text-pink-700 px-3 py-1 rounded-full text-xs font-bold">
+                <i class="fas fa-heart mr-1"></i> Personalizable
+              </div>
+            </div>
+
+            <!-- Galería mini -->
+            <div class="flex gap-2 p-4 bg-gray-50">
+              <button class="thumbnail-btn active" data-product="litofania" data-img="/productos/litofania-retrato.jpg">
+                <img src="/productos/litofania-retrato.jpg" alt="Vista frontal" class="w-full h-full object-cover rounded-lg" />
+              </button>
+              <button class="thumbnail-btn" data-product="litofania" data-img="/productos/litofania-iluminada.jpg">
+                <img src="/productos/litofania-iluminada.jpg" alt="Iluminada" class="w-full h-full object-cover rounded-lg" />
+              </button>
+              <button class="thumbnail-btn" data-product="litofania" data-img="/productos/litofania-perfil.jpg">
+                <img src="/productos/litofania-perfil.jpg" alt="Vista de perfil" class="w-full h-full object-cover rounded-lg" />
+              </button>
+              <button class="thumbnail-btn" data-product="litofania" data-img="/productos/litofania-base.jpg">
+                <img src="/productos/litofania-base.jpg" alt="Base con luz LED" class="w-full h-full object-cover rounded-lg" />
+              </button>
+            </div>
+
+            <!-- Info -->
+            <div class="p-6">
+              <div class="flex items-start justify-between mb-4">
+                <div>
+                  <h2 class="font-heading text-2xl font-bold text-primary mb-1">
+                    Retrato Litofanía
+                  </h2>
+                  <p class="text-gray-500 text-sm">Personalizado • Con luz LED</p>
+                </div>
+                <div class="text-right">
+                  <p class="text-sm text-gray-400 line-through">S/ 79</p>
+                  <p class="text-2xl font-bold text-accent">S/ 59</p>
+                </div>
+              </div>
+
+              <p class="text-gray-600 mb-6 leading-relaxed">
+                Transforma tu foto favorita en una obra de arte 3D. Cuando la luz la atraviesa, 
+                revela la imagen con un efecto mágico. El regalo más emotivo para alguien especial.
+              </p>
+
+              <!-- Características -->
+              <ul class="space-y-2 mb-6 text-sm">
+                <li class="flex items-center gap-2 text-gray-700">
+                  <i class="fas fa-image text-accent w-4"></i>
+                  <span>Tu foto convertida en arte 3D</span>
+                </li>
+                <li class="flex items-center gap-2 text-gray-700">
+                  <i class="fas fa-lightbulb text-accent w-4"></i>
+                  <span>Incluye base con luz LED</span>
+                </li>
+                <li class="flex items-center gap-2 text-gray-700">
+                  <i class="fas fa-expand-arrows-alt text-accent w-4"></i>
+                  <span>Tamaño: 10 x 15 cm</span>
+                </li>
+                <li class="flex items-center gap-2 text-gray-700">
+                  <i class="fas fa-battery-full text-accent w-4"></i>
+                  <span>USB recargable o pilas</span>
+                </li>
+              </ul>
+
+              <!-- CTA -->
+              <a 
+                href={`${whatsappBase}?text=${encodeURIComponent('¡Hola! Me interesa un Retrato Litofanía personalizado para Navidad 🎄')}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                class="w-full bg-green-500 hover:bg-green-600 text-white font-semibold py-4 px-6 rounded-xl flex items-center justify-center gap-3 transition-all duration-300 hover:scale-[1.02] active:scale-[0.98]"
+              >
+                <i class="fab fa-whatsapp text-xl"></i>
+                Personalizar mi retrato
+              </a>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Sección de confianza -->
+    <section class="py-16 px-4 bg-gradient-to-r from-primary to-blue-800">
+      <div class="container-custom text-center text-white">
+        <h3 class="font-heading text-2xl md:text-3xl font-bold mb-8">
+          ¿Por qué elegir Maxwell?
+        </h3>
+        <div class="grid sm:grid-cols-3 gap-8 max-w-3xl mx-auto">
+          <div class="flex flex-col items-center">
+            <div class="w-14 h-14 bg-white/10 rounded-full flex items-center justify-center mb-4">
+              <i class="fas fa-award text-2xl text-accent"></i>
+            </div>
+            <h4 class="font-semibold mb-2">Calidad Premium</h4>
+            <p class="text-white/70 text-sm">Impresiones de alta definición con acabados profesionales</p>
+          </div>
+          <div class="flex flex-col items-center">
+            <div class="w-14 h-14 bg-white/10 rounded-full flex items-center justify-center mb-4">
+              <i class="fas fa-truck text-2xl text-accent"></i>
+            </div>
+            <h4 class="font-semibold mb-2">Entrega Rápida</h4>
+            <p class="text-white/70 text-sm">Recibe tu pedido antes de Navidad en Lima</p>
+          </div>
+          <div class="flex flex-col items-center">
+            <div class="w-14 h-14 bg-white/10 rounded-full flex items-center justify-center mb-4">
+              <i class="fas fa-headset text-2xl text-accent"></i>
+            </div>
+            <h4 class="font-semibold mb-2">Soporte Directo</h4>
+            <p class="text-white/70 text-sm">Atención personalizada por WhatsApp</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Urgencia / Countdown -->
+    <section class="py-12 px-4 bg-red-50 border-y border-red-100">
+      <div class="container-custom text-center">
+        <div class="flex items-center justify-center gap-3 mb-4">
+          <i class="fas fa-clock text-red-500 text-2xl animate-pulse"></i>
+          <h3 class="font-heading text-xl md:text-2xl font-bold text-red-700">
+            Últimos días para pedidos navideños
+          </h3>
+        </div>
+        <p class="text-red-600 max-w-xl mx-auto">
+          Para garantizar la entrega antes del <strong>24 de diciembre</strong>, 
+          realiza tu pedido antes del <strong>20 de diciembre</strong>.
+        </p>
+      </div>
+    </section>
+
+    <!-- Footer simple -->
+    <footer class="py-8 px-4 bg-white border-t border-gray-100">
+      <div class="container-custom">
+        <div class="flex flex-col sm:flex-row items-center justify-between gap-4">
+          <div class="flex items-center gap-3">
+            <img src="/logo.png" alt="Maxwell Logo" class="h-8 w-auto" />
+            <span class="text-sm text-gray-500">Maxwell: Soluciones Tecnológicas</span>
+          </div>
+          <div class="flex items-center gap-4">
+            <a 
+              href="https://www.facebook.com/people/Maxwell-Soluciones-Tecnol%C3%B3gicas/61578907081704/" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              class="w-10 h-10 bg-gray-100 rounded-full flex items-center justify-center text-gray-600 hover:bg-accent hover:text-white transition-all"
+            >
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <a 
+              href="https://www.instagram.com/maxwell.techsolutions/" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              class="w-10 h-10 bg-gray-100 rounded-full flex items-center justify-center text-gray-600 hover:bg-accent hover:text-white transition-all"
+            >
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a 
+              href={whatsappBase}
+              target="_blank" 
+              rel="noopener noreferrer"
+              class="w-10 h-10 bg-gray-100 rounded-full flex items-center justify-center text-gray-600 hover:bg-green-500 hover:text-white transition-all"
+            >
+              <i class="fab fa-whatsapp"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+  </main>
+</Layout>
+
+<style>
+  .thumbnail-btn {
+    @apply w-16 h-16 rounded-lg overflow-hidden border-2 border-transparent transition-all duration-300 opacity-60 hover:opacity-100;
+  }
+  
+  .thumbnail-btn.active {
+    @apply border-accent opacity-100;
+  }
+</style>
+
+<script>
+  // Galería de imágenes interactiva
+  document.addEventListener('DOMContentLoaded', () => {
+    const thumbnails = document.querySelectorAll('.thumbnail-btn');
+    
+    thumbnails.forEach(btn => {
+      btn.addEventListener('click', () => {
+        const product = btn.getAttribute('data-product');
+        const newImg = btn.getAttribute('data-img');
+        
+        // Actualizar imagen principal
+        const article = btn.closest('article');
+        const mainImg = article?.querySelector('.aspect-square img') as HTMLImageElement;
+        if (mainImg && newImg) {
+          mainImg.src = newImg;
+        }
+        
+        // Actualizar estado activo
+        const siblings = btn.parentElement?.querySelectorAll('.thumbnail-btn');
+        siblings?.forEach(sib => sib.classList.remove('active'));
+        btn.classList.add('active');
+      });
+    });
+  });
+</script>

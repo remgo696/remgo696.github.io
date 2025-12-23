@@ -194,11 +194,11 @@ const Services = () => {
 
                 {/* CTA Button */}
                 <motion.a
-                  href="#contacto"
+                  href={service.title === "Impresiones 3D Profesionales" ? "/navidad2025" : "#contacto"}
                   className="inline-flex items-center text-accent font-semibold hover:text-primary transition-colors duration-300 group"
                   whileHover={{ x: 5 }}
                 >
-                  Solicitar información
+                  {service.title === "Impresiones 3D Profesionales" ? "Más información" : "Solicitar información"}
                   <i className="fas fa-arrow-right ml-2 group-hover:translate-x-1 transition-transform duration-300"></i>
                 </motion.a>
               </div>
