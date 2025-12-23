@@ -12,7 +12,7 @@ const whatsappBase = `https://wa.me/${WHATSAPP_NUMBER.replace(/[^0-9]/g, '')}`;
   description="Regalos únicos impresos en 3D para esta Navidad 2025. Porta mandos Pokémon Cubone y Retratos con litografía personalizados. Entrega en Lima Metropolitana."
   keywords="regalos navidad 3D, impresión 3D Lima, porta mandos pokemon, litografía 3D, regalos personalizados Lima, navidad 2025"
 >
-  <main class="min-h-screen bg-gradient-to-br from-slate-50 via-white to-blue-50">
+  <main class="min-h-screen bg-gradient-to-br from-slate-100 via-white to-sky-100">
     
     <!-- Header minimalista -->
     <header class="fixed top-0 left-0 right-0 z-50 bg-white/90 backdrop-blur-md border-b border-gray-100">
@@ -114,8 +114,9 @@ const whatsappBase = `https://wa.me/${WHATSAPP_NUMBER.replace(/[^0-9]/g, '')}`;
                   <p class="text-gray-500 text-sm">Pokémon • Decorativo & Funcional</p>
                 </div>
                 <div class="text-right">
-                  <p class="text-lg font-bold text-accent">S/ 35</p>
-                  <p class="text-xs text-green-600 font-medium">2 x S/ 60</p>
+                  <p class="text-sm text-gray-400 line-through">S/ 50 c/u</p>
+                  <p class="text-lg font-bold text-accent">2 x S/ 65</p>
+                  <p class="text-xs text-green-600 font-medium">🎄 Oferta Navideña</p>
                 </div>
               </div>
 
@@ -123,6 +124,27 @@ const whatsappBase = `https://wa.me/${WHATSAPP_NUMBER.replace(/[^0-9]/g, '')}`;
                 El compañero perfecto para tu escritorio gamer es un pokémon. Cubone sostiene tu mando de PS5, Xbox o Switch 
                 mientras no lo usas, protegiéndolo y dándole un toque único a tu setup.
               </p>
+
+              <!-- Selector de color -->
+              <div class="mb-6 p-4 bg-gray-50 rounded-xl">
+                <p class="text-sm font-medium text-gray-700 mb-3">Elige tu versión:</p>
+                <div class="flex gap-3">
+                  <label class="flex items-center gap-2 cursor-pointer">
+                    <input type="radio" name="cubone-color" value="blanco" checked class="accent-accent" />
+                    <span class="flex items-center gap-2 text-sm">
+                      <span class="w-5 h-5 rounded-full bg-gray-100 border-2 border-gray-300"></span>
+                      Blanco (Clásico)
+                    </span>
+                  </label>
+                  <label class="flex items-center gap-2 cursor-pointer">
+                    <input type="radio" name="cubone-color" value="negro" class="accent-accent" />
+                    <span class="flex items-center gap-2 text-sm">
+                      <span class="w-5 h-5 rounded-full bg-gray-800 border-2 border-gray-600"></span>
+                      Negro (Shiny ✨)
+                    </span>
+                  </label>
+                </div>
+              </div>
 
               <!-- Características -->
               <ul class="space-y-2 mb-6 text-sm">
@@ -245,6 +267,41 @@ const whatsappBase = `https://wa.me/${WHATSAPP_NUMBER.replace(/[^0-9]/g, '')}`;
       </div>
     </section>
 
+    <!-- Urgencia / Countdown -->
+    <section class="py-12 px-4 bg-gradient-to-r from-amber-50 to-orange-50 border-y border-amber-200">
+      <div class="container-custom text-center">
+        <div class="flex items-center justify-center gap-3 mb-4">
+          <i class="fas fa-gift text-amber-500 text-2xl"></i>
+          <h3 class="font-heading text-xl md:text-2xl font-bold text-amber-800">
+            ¡Asegura un bonito recuerdo como regalo!
+          </h3>
+        </div>
+        <p class="text-amber-700 max-w-xl mx-auto mb-6">
+          Producción limitada. La oferta navideña termina en:
+        </p>
+        
+        <!-- Countdown -->
+        <div id="countdown" class="flex justify-center gap-4 md:gap-6">
+          <div class="bg-white rounded-xl shadow-md p-4 min-w-[70px]">
+            <span id="days" class="block text-3xl md:text-4xl font-bold text-primary">00</span>
+            <span class="text-xs text-gray-500 uppercase">Días</span>
+          </div>
+          <div class="bg-white rounded-xl shadow-md p-4 min-w-[70px]">
+            <span id="hours" class="block text-3xl md:text-4xl font-bold text-primary">00</span>
+            <span class="text-xs text-gray-500 uppercase">Horas</span>
+          </div>
+          <div class="bg-white rounded-xl shadow-md p-4 min-w-[70px]">
+            <span id="minutes" class="block text-3xl md:text-4xl font-bold text-primary">00</span>
+            <span class="text-xs text-gray-500 uppercase">Min</span>
+          </div>
+          <div class="bg-white rounded-xl shadow-md p-4 min-w-[70px]">
+            <span id="seconds" class="block text-3xl md:text-4xl font-bold text-accent">00</span>
+            <span class="text-xs text-gray-500 uppercase">Seg</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- Sección de confianza -->
     <section class="py-16 px-4 bg-gradient-to-r from-primary to-blue-800">
       <div class="container-custom text-center text-white">
@@ -274,22 +331,6 @@ const whatsappBase = `https://wa.me/${WHATSAPP_NUMBER.replace(/[^0-9]/g, '')}`;
             <p class="text-white/70 text-sm">Atención personalizada por WhatsApp</p>
           </div>
         </div>
-      </div>
-    </section>
-
-    <!-- Urgencia / Countdown -->
-    <section class="py-12 px-4 bg-red-50 border-y border-red-100">
-      <div class="container-custom text-center">
-        <div class="flex items-center justify-center gap-3 mb-4">
-          <i class="fas fa-clock text-red-500 text-2xl animate-pulse"></i>
-          <h3 class="font-heading text-xl md:text-2xl font-bold text-red-700">
-            Últimos días para pedidos navideños
-          </h3>
-        </div>
-        <p class="text-red-600 max-w-xl mx-auto">
-          Para garantizar la entrega antes del <strong>24 de diciembre</strong>, 
-          realiza tu pedido antes del <strong>20 de diciembre</strong>.
-        </p>
       </div>
     </section>
 
@@ -345,6 +386,30 @@ const whatsappBase = `https://wa.me/${WHATSAPP_NUMBER.replace(/[^0-9]/g, '')}`;
 </style>
 
 <script>
+  // Countdown Timer - 25 de diciembre 12:00 hora Perú (UTC-5)
+  function updateCountdown() {
+    const targetDate = new Date('2025-12-25T12:00:00-05:00').getTime();
+    const now = new Date().getTime();
+    const difference = targetDate - now;
+
+    if (difference > 0) {
+      const days = Math.floor(difference / (1000 * 60 * 60 * 24));
+      const hours = Math.floor((difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      const minutes = Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60));
+      const seconds = Math.floor((difference % (1000 * 60)) / 1000);
+
+      document.getElementById('days')!.textContent = days.toString().padStart(2, '0');
+      document.getElementById('hours')!.textContent = hours.toString().padStart(2, '0');
+      document.getElementById('minutes')!.textContent = minutes.toString().padStart(2, '0');
+      document.getElementById('seconds')!.textContent = seconds.toString().padStart(2, '0');
+    } else {
+      document.getElementById('countdown')!.innerHTML = '<p class="text-lg font-semibold text-amber-700">¡La oferta ha terminado!</p>';
+    }
+  }
+
+  updateCountdown();
+  setInterval(updateCountdown, 1000);
+
   // Galería de imágenes interactiva
   document.addEventListener('DOMContentLoaded', () => {
     const thumbnails = document.querySelectorAll('.thumbnail-btn');
