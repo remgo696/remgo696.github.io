@@ -168,7 +168,8 @@ const whatsappBase = `https://wa.me/${WHATSAPP_NUMBER.replace(/[^0-9]/g, '')}`;
 
               <!-- CTA -->
               <a 
-                href={`${whatsappBase}?text=${encodeURIComponent('¡Hola! Me interesa el Porta Mandos Cubone para Navidad 🎄')}`}
+                id="cubone-whatsapp-btn"
+                href={`${whatsappBase}?text=${encodeURIComponent('¡Hola! Me interesa el Porta Mandos Cubone (blanco) para Navidad 🎄')}`}
                 target="_blank"
                 rel="noopener noreferrer"
                 class="w-full bg-green-500 hover:bg-green-600 text-white font-semibold py-4 px-6 rounded-xl flex items-center justify-center gap-3 transition-all duration-300 hover:scale-[1.02] active:scale-[0.98]"
@@ -252,7 +253,7 @@ const whatsappBase = `https://wa.me/${WHATSAPP_NUMBER.replace(/[^0-9]/g, '')}`;
 
               <!-- CTA -->
               <a 
-                href={`${whatsappBase}?text=${encodeURIComponent('¡Hola! Me interesa un Retrato Litofanía personalizado para Navidad 🎄')}`}
+                href={`${whatsappBase}?text=${encodeURIComponent('¡Hola! Me interesa un Retrato Litofanía personalizado para Navidad.')}`}
                 target="_blank"
                 rel="noopener noreferrer"
                 class="w-full bg-green-500 hover:bg-green-600 text-white font-semibold py-4 px-6 rounded-xl flex items-center justify-center gap-3 transition-all duration-300 hover:scale-[1.02] active:scale-[0.98]"
@@ -430,6 +431,19 @@ const whatsappBase = `https://wa.me/${WHATSAPP_NUMBER.replace(/[^0-9]/g, '')}`;
         const siblings = btn.parentElement?.querySelectorAll('.thumbnail-btn');
         siblings?.forEach(sib => sib.classList.remove('active'));
         btn.classList.add('active');
+      });
+    });
+
+    // Actualizar enlace de WhatsApp según color seleccionado
+    const colorRadios = document.querySelectorAll('input[name="cubone-color"]');
+    const whatsappBtn = document.getElementById('cubone-whatsapp-btn') as HTMLAnchorElement;
+    const whatsappBase = 'https://wa.me/51957080898';
+
+    colorRadios.forEach(radio => {
+      radio.addEventListener('change', (e) => {
+        const selectedColor = (e.target as HTMLInputElement).value;
+        const message = `¡Hola! Me interesa el Porta Mandos Cubone (${selectedColor}) para Navidad 🎄`;
+        whatsappBtn.href = `${whatsappBase}?text=${encodeURIComponent(message)}`;
       });
     });
   });
