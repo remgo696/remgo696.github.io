@@ -1,0 +1,344 @@
+---
+import Layout from '../layouts/Layout.astro';
+import '../styles/global.css';
+
+const WHATSAPP_NUMBER = "+51957080898";
+const whatsappBase = `https://wa.me/${WHATSAPP_NUMBER.replace(/[^0-9]/g, '')}`;
+---
+
+<Layout 
+  title="Nosotros - Misión y Visión | Maxwell: Soluciones Tecnológicas"
+  description="Conoce la misión y visión de Maxwell Soluciones Tecnológicas. Líderes en soluciones tecnológicas para pymes en Lima, Perú."
+  keywords="Maxwell, misión, visión, soluciones tecnológicas Lima, empresa tecnología Perú, automatización pymes"
+>
+  <main class="min-h-screen bg-white">
+    
+    <!-- Header -->
+    <header class="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-md border-b border-gray-100">
+      <div class="container-custom py-4">
+        <div class="flex items-center justify-between">
+          <a href="/" class="flex items-center gap-3 group">
+            <img src="/logo.png" alt="Maxwell Logo" class="h-10 w-auto" />
+            <span class="font-heading font-bold text-primary text-lg hidden sm:block">Maxwell</span>
+          </a>
+          <a 
+            href="/" 
+            class="text-sm text-gray-600 hover:text-accent transition-colors flex items-center gap-2"
+          >
+            <i class="fas fa-arrow-left"></i>
+            Volver al inicio
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="pt-32 pb-20 px-4 bg-gradient-to-br from-primary via-blue-800 to-slate-900 text-white relative overflow-hidden">
+      <!-- Decorative elements -->
+      <div class="absolute inset-0 opacity-10">
+        <div class="absolute top-20 left-10 w-72 h-72 bg-accent rounded-full blur-3xl"></div>
+        <div class="absolute bottom-10 right-10 w-96 h-96 bg-blue-400 rounded-full blur-3xl"></div>
+      </div>
+      
+      <div class="container-custom relative z-10">
+        <div class="max-w-4xl mx-auto text-center">
+          <div class="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm px-4 py-2 rounded-full text-sm font-medium mb-8">
+            <i class="fas fa-building"></i>
+            Sobre Nosotros
+          </div>
+          
+          <h1 class="font-heading text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
+            Impulsamos el <span class="text-accent">futuro</span><br/>
+            de tu empresa
+          </h1>
+          
+          <p class="text-xl md:text-2xl text-white/80 max-w-3xl mx-auto leading-relaxed">
+            Somos Maxwell: Soluciones Tecnológicas, tu aliado estratégico en 
+            <span class="text-accent font-semibold">automatización, seguridad y conectividad</span> 
+            para pymes en Lima Metropolitana.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Misión y Visión -->
+    <section class="py-20 px-4">
+      <div class="container-custom">
+        <div class="grid md:grid-cols-2 gap-12 max-w-6xl mx-auto">
+          
+          <!-- Misión -->
+          <div class="group relative">
+            <div class="absolute -inset-4 bg-gradient-to-r from-accent/20 to-blue-500/20 rounded-3xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+            <div class="relative bg-white border border-gray-100 rounded-3xl p-8 md:p-10 shadow-lg hover:shadow-xl transition-shadow duration-300">
+              <div class="w-16 h-16 bg-gradient-to-br from-accent to-blue-500 rounded-2xl flex items-center justify-center mb-6">
+                <i class="fas fa-bullseye text-white text-2xl"></i>
+              </div>
+              
+              <h2 class="font-heading text-3xl font-bold text-primary mb-6">
+                Nuestra Misión
+              </h2>
+              
+              <p class="text-lg text-gray-600 leading-relaxed mb-6">
+                <span class="text-primary font-semibold">Resguardar los activos de las pymes</span> 
+                automatizando procesos y previniendo pérdidas, brindando tranquilidad 
+                y control a los empresarios peruanos.
+              </p>
+              
+              <ul class="space-y-3">
+                <li class="flex items-start gap-3 text-gray-600">
+                  <i class="fas fa-shield-alt text-accent mt-1"></i>
+                  <span>Protección integral de tu negocio</span>
+                </li>
+                <li class="flex items-start gap-3 text-gray-600">
+                  <i class="fas fa-cogs text-accent mt-1"></i>
+                  <span>Automatización que reduce errores y costos</span>
+                </li>
+                <li class="flex items-start gap-3 text-gray-600">
+                  <i class="fas fa-handshake text-accent mt-1"></i>
+                  <span>Acompañamiento cercano y personalizado</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Visión -->
+          <div class="group relative">
+            <div class="absolute -inset-4 bg-gradient-to-r from-primary/20 to-accent/20 rounded-3xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+            <div class="relative bg-white border border-gray-100 rounded-3xl p-8 md:p-10 shadow-lg hover:shadow-xl transition-shadow duration-300">
+              <div class="w-16 h-16 bg-gradient-to-br from-primary to-blue-600 rounded-2xl flex items-center justify-center mb-6">
+                <i class="fas fa-eye text-white text-2xl"></i>
+              </div>
+              
+              <h2 class="font-heading text-3xl font-bold text-primary mb-6">
+                Nuestra Visión
+              </h2>
+              
+              <p class="text-lg text-gray-600 leading-relaxed mb-6">
+                Ser <span class="text-primary font-semibold">líderes en Perú</span> en el impulso 
+                del sector industrial y empresarial con soluciones tecnológicas 
+                basadas en hardware de última generación.
+              </p>
+              
+              <ul class="space-y-3">
+                <li class="flex items-start gap-3 text-gray-600">
+                  <i class="fas fa-rocket text-primary mt-1"></i>
+                  <span>Innovación constante en tecnología</span>
+                </li>
+                <li class="flex items-start gap-3 text-gray-600">
+                  <i class="fas fa-industry text-primary mt-1"></i>
+                  <span>Impulso al crecimiento industrial peruano</span>
+                </li>
+                <li class="flex items-start gap-3 text-gray-600">
+                  <i class="fas fa-trophy text-primary mt-1"></i>
+                  <span>Referentes en calidad y confianza</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Valores -->
+    <section class="py-20 px-4 bg-gradient-to-b from-gray-50 to-white">
+      <div class="container-custom">
+        <div class="text-center mb-16">
+          <h2 class="font-heading text-3xl md:text-4xl font-bold text-primary mb-4">
+            Nuestros <span class="text-accent">Valores</span>
+          </h2>
+          <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+            Los principios que guían cada proyecto y cada relación con nuestros clientes
+          </p>
+        </div>
+
+        <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
+          
+          <div class="text-center group">
+            <div class="w-20 h-20 bg-white rounded-2xl shadow-lg flex items-center justify-center mx-auto mb-6 group-hover:shadow-xl group-hover:-translate-y-2 transition-all duration-300">
+              <i class="fas fa-lock text-3xl text-accent"></i>
+            </div>
+            <h3 class="font-heading text-xl font-bold text-primary mb-3">Confianza</h3>
+            <p class="text-gray-600 text-sm leading-relaxed">
+              Construimos relaciones duraderas basadas en la transparencia y el cumplimiento
+            </p>
+          </div>
+
+          <div class="text-center group">
+            <div class="w-20 h-20 bg-white rounded-2xl shadow-lg flex items-center justify-center mx-auto mb-6 group-hover:shadow-xl group-hover:-translate-y-2 transition-all duration-300">
+              <i class="fas fa-medal text-3xl text-accent"></i>
+            </div>
+            <h3 class="font-heading text-xl font-bold text-primary mb-3">Excelencia</h3>
+            <p class="text-gray-600 text-sm leading-relaxed">
+              Cada proyecto recibe nuestra máxima dedicación y estándares de calidad
+            </p>
+          </div>
+
+          <div class="text-center group">
+            <div class="w-20 h-20 bg-white rounded-2xl shadow-lg flex items-center justify-center mx-auto mb-6 group-hover:shadow-xl group-hover:-translate-y-2 transition-all duration-300">
+              <i class="fas fa-lightbulb text-3xl text-accent"></i>
+            </div>
+            <h3 class="font-heading text-xl font-bold text-primary mb-3">Innovación</h3>
+            <p class="text-gray-600 text-sm leading-relaxed">
+              Buscamos constantemente nuevas soluciones para los desafíos de nuestros clientes
+            </p>
+          </div>
+
+          <div class="text-center group">
+            <div class="w-20 h-20 bg-white rounded-2xl shadow-lg flex items-center justify-center mx-auto mb-6 group-hover:shadow-xl group-hover:-translate-y-2 transition-all duration-300">
+              <i class="fas fa-users text-3xl text-accent"></i>
+            </div>
+            <h3 class="font-heading text-xl font-bold text-primary mb-3">Compromiso</h3>
+            <p class="text-gray-600 text-sm leading-relaxed">
+              Tu éxito es nuestro éxito. Nos involucramos en cada etapa del proceso
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Por qué elegirnos -->
+    <section class="py-20 px-4">
+      <div class="container-custom">
+        <div class="max-w-6xl mx-auto">
+          <div class="grid md:grid-cols-2 gap-12 items-center">
+            
+            <div>
+              <h2 class="font-heading text-3xl md:text-4xl font-bold text-primary mb-6">
+                ¿Por qué <span class="text-accent">Maxwell</span>?
+              </h2>
+              <p class="text-lg text-gray-600 mb-8 leading-relaxed">
+                No vendemos solo equipos o instalaciones. Te brindamos 
+                <span class="font-semibold text-primary">tranquilidad, control y la certeza</span> 
+                de que tu negocio está protegido y optimizado.
+              </p>
+
+              <div class="space-y-6">
+                <div class="flex gap-4">
+                  <div class="w-12 h-12 bg-accent/10 rounded-xl flex items-center justify-center flex-shrink-0">
+                    <i class="fas fa-brain text-accent text-xl"></i>
+                  </div>
+                  <div>
+                    <h4 class="font-semibold text-primary mb-1">Enfoque en tu tranquilidad</h4>
+                    <p class="text-gray-600 text-sm">Basados en "Véndele a la mente, no a la gente", conectamos con lo que realmente necesitas</p>
+                  </div>
+                </div>
+
+                <div class="flex gap-4">
+                  <div class="w-12 h-12 bg-accent/10 rounded-xl flex items-center justify-center flex-shrink-0">
+                    <i class="fas fa-map-marker-alt text-accent text-xl"></i>
+                  </div>
+                  <div>
+                    <h4 class="font-semibold text-primary mb-1">100% Lima Metropolitana</h4>
+                    <p class="text-gray-600 text-sm">Conocemos el mercado local y respondemos rápidamente a tus necesidades</p>
+                  </div>
+                </div>
+
+                <div class="flex gap-4">
+                  <div class="w-12 h-12 bg-accent/10 rounded-xl flex items-center justify-center flex-shrink-0">
+                    <i class="fas fa-microchip text-accent text-xl"></i>
+                  </div>
+                  <div>
+                    <h4 class="font-semibold text-primary mb-1">Especialistas en hardware</h4>
+                    <p class="text-gray-600 text-sm">PLCs Siemens, cámaras IP, fibra óptica, impresiones 3D y más tecnología de punta</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="relative">
+              <div class="absolute inset-0 bg-gradient-to-br from-accent/20 to-primary/20 rounded-3xl blur-2xl"></div>
+              <div class="relative bg-gradient-to-br from-primary to-blue-800 rounded-3xl p-8 md:p-10 text-white">
+                <div class="text-center mb-8">
+                  <div class="text-6xl font-bold text-accent mb-2">+10</div>
+                  <p class="text-white/80">años de experiencia</p>
+                </div>
+                
+                <div class="grid grid-cols-2 gap-6 text-center">
+                  <div>
+                    <div class="text-3xl font-bold text-white mb-1">+200</div>
+                    <p class="text-white/70 text-sm">Proyectos completados</p>
+                  </div>
+                  <div>
+                    <div class="text-3xl font-bold text-white mb-1">+150</div>
+                    <p class="text-white/70 text-sm">Clientes satisfechos</p>
+                  </div>
+                  <div>
+                    <div class="text-3xl font-bold text-white mb-1">24/7</div>
+                    <p class="text-white/70 text-sm">Soporte disponible</p>
+                  </div>
+                  <div>
+                    <div class="text-3xl font-bold text-white mb-1">100%</div>
+                    <p class="text-white/70 text-sm">Garantía de calidad</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="py-16 px-4 bg-gradient-to-r from-accent to-blue-500">
+      <div class="container-custom text-center">
+        <h2 class="font-heading text-3xl md:text-4xl font-bold text-white mb-6">
+          ¿Listo para proteger y optimizar tu negocio?
+        </h2>
+        <p class="text-white/90 text-lg mb-8 max-w-2xl mx-auto">
+          Conversemos sobre cómo podemos ayudarte a alcanzar tus objetivos con soluciones tecnológicas a tu medida.
+        </p>
+        <a 
+          href={`${whatsappBase}?text=${encodeURIComponent('¡Hola! Me gustaría conocer más sobre los servicios de Maxwell.')}`}
+          target="_blank"
+          rel="noopener noreferrer"
+          class="inline-flex items-center gap-3 bg-white text-primary font-semibold py-4 px-8 rounded-xl hover:bg-gray-100 transition-all duration-300 hover:scale-105"
+        >
+          <i class="fab fa-whatsapp text-2xl text-green-500"></i>
+          Contáctanos por WhatsApp
+        </a>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-8 px-4 bg-white border-t border-gray-100">
+      <div class="container-custom">
+        <div class="flex flex-col sm:flex-row items-center justify-between gap-4">
+          <div class="flex items-center gap-3">
+            <img src="/logo.png" alt="Maxwell Logo" class="h-8 w-auto" />
+            <span class="text-sm text-gray-500">Maxwell: Soluciones Tecnológicas</span>
+          </div>
+          <div class="flex items-center gap-4">
+            <a 
+              href="https://www.facebook.com/people/Maxwell-Soluciones-Tecnol%C3%B3gicas/61578907081704/" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              class="w-10 h-10 bg-gray-100 rounded-full flex items-center justify-center text-gray-600 hover:bg-accent hover:text-white transition-all"
+            >
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <a 
+              href="https://www.instagram.com/maxwell.techsolutions/" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              class="w-10 h-10 bg-gray-100 rounded-full flex items-center justify-center text-gray-600 hover:bg-accent hover:text-white transition-all"
+            >
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a 
+              href={whatsappBase}
+              target="_blank" 
+              rel="noopener noreferrer"
+              class="w-10 h-10 bg-gray-100 rounded-full flex items-center justify-center text-gray-600 hover:bg-green-500 hover:text-white transition-all"
+            >
+              <i class="fab fa-whatsapp"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+  </main>
+</Layout>
